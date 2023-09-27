@@ -22,11 +22,11 @@ html body{
 .nav{
   height:70px;
   width: 100%;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 4vw;
+  padding: 2vw 4vw 0 4vw;
   
 }
 
@@ -38,7 +38,7 @@ html body{
 }
 
 .nav h2{
-  font-size: 2.6vw;
+  font-size: 2.8vw;
   font-weight: 700;
   /* color: #fff; */
 }
@@ -69,20 +69,22 @@ html body{
 }
 
 .nav #open{
-  font-size: 1vw;
-  padding: 1vw 2vw;
-  /* background-color: #77E4D4; */
-  color: #000;
-  font-weight: 800;
-  /* border: none; */
-  border: .3vw solid #77E4D4;
-  border-radius: 10px;
-  box-shadow:  0 3px 5px rgba(0,0,0,.3) ;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 2vw;
+  font-weight: 700;
+  border-right: 4px solid grey;
+  border-bottom: 3px solid grey;
+
+  color: #fff;
+  
+  background: linear-gradient(200deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
 }
 
 .nav #open:hover{
   /* letter-spacing: 4px; */
   opacity: .8;
+  background-color: darkblue;
 }
 
 /* content section  */
@@ -119,10 +121,12 @@ html body{
 
 .content button{
   padding: 1vw 3vw;
-  font-size: 2vw;
+  font-size: 1.3vw;
   border-radius: 2vw;
   font-weight: 700;
   /* background-color: #e74885; */
+  border-right: 4px solid grey;
+  border-bottom: 3px solid grey;
   color: #fff;
   
   background: linear-gradient(200deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
@@ -160,8 +164,9 @@ html body{
 
 .project1{
   width: 30%;
-  padding: 1vw 2vw;
+  padding: 1vw 1vw;
   border: 1px solid grey;
+  background: linear-gradient(200deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
 }
 
 .project1 img{
@@ -194,8 +199,9 @@ html body{
 /* project2 */
 .project2{
   width: 30%;
-  padding: 1vw 2vw;
+  padding: 1vw 1vw;
   border: 1px solid grey;
+  background: linear-gradient(200deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
 }
 
 .project2 img{
@@ -228,8 +234,9 @@ html body{
 /* project3 */
 .project3{
   width: 30%;
-  padding: 1vw 2vw;
+  padding: 1vw 1vw;
   border: 1px solid grey;
+  background: linear-gradient(200deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
 }
 
 .project3 img{
@@ -303,7 +310,7 @@ html body{
 
 .about{
 
-padding: 1vw 3vw;
+padding: 3vw 3vw;
 }
 .about h1{
   font-size: 3vw;
@@ -321,6 +328,7 @@ padding: 1vw 3vw;
   align-items: center;
   justify-content: space-between;
   padding: 1vw 2vw;
+  background: linear-gradient(200deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
 }
 .a1{
   width: 25%;
@@ -369,6 +377,14 @@ padding: 1vw 3vw;
   opacity: .7;
   font-weight: 800;
   
+}
+.social a{
+  text-decoration: none;
+  color: #fff;
+}
+.email a{
+  text-decoration: none;
+  color: #fff; 
 }
 
 
