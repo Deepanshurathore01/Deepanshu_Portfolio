@@ -385,6 +385,137 @@ padding: 3vw 3vw;
   color: #fff; 
 }
 
+/* -------------- contact button sectionn  */
+#contact .btn{
+  text-align: center;
+  padding:10px; 
+  margin:auto;
+  width:6%;
+  background-color:#fff;
+  font-weight:bold;
+  border-bottom:4px solid  #999999;
+  border-right:5px solid  #999999;
+  border-top:1px solid  #999999;
+  border-left:1px solid  #999999;
+}
+
+.model-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top:0;
+  left:0;
+  background:rgba(22, 22, 22, 0.3);
+  transform: scale(0);
+
+}
+.model-container .model{
+  height: 490px;
+  width: 370px;
+/* margin: 0 10px; */
+/* padding: 20px; */
+background: #fff;
+border-radius: 5px;
+/* text-align: center; */
+position: relative;
+}
+
+.model-container .model .ri-heart-fill{
+  font-size: 100px;
+  padding-bottom: 50px;
+  color: crimson;
+  margin: 10px 0px;
+  text-shadow: 0 3px 5px rgba(43, 42, 42, 0.3),
+  30px 30px 0 #ccc,
+  -30px 30px 0 #333 ;
+}
+.model-container .model h3{
+  color: #333;
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+.model-container .model p{
+  color: #666;
+  margin: 20px 0;
+}
+.model-container .model button{
+  height: 35px;
+  width: 120px;
+  background:#333 ;
+  color: #fff;
+  outline: none;
+  border-radius: 50px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,.3);
+}
+
+.model-container .model button:hover{
+  opacity: .8;
+}
+
+.model-container .model .ri-close-line{
+  position: absolute;
+  top:15px;
+  right: 15px;
+  font-size: 25px;
+  font-weight: 900;
+  cursor: pointer;
+  color: #333;
+}
+
+.fr{
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  width: 320px;
+  background-color:rgb(28, 214, 177);
+  gap:10px;
+  padding: 2vw 2vw;
+  position: relative;
+  
+}
+
+.fr label{
+ font-size: 20px;
+ font-weight: 700;
+ font-family: cursive;
+}
+
+.fr input{
+  padding: 10px 20px ;
+  border: 3px solid grey;
+  border-radius: 1vw;
+  width: 20vw;
+}
+
+.fr textarea{
+  margin-top: 20px;
+  width:95%;
+  height:80px;
+  border: 3px solid grey;
+  border-radius: 1vw;
+}
+
+.fr .btn{
+  text-align: center;
+  padding:12px; 
+  margin:auto;
+  width:30%;
+  font-size: 20px;
+  background-color:#fff;
+  font-weight:bold;
+  border-bottom:4px solid  #999999;
+  border-right:5px solid  #f0e5e5;
+  border-top:1px solid  #999999;
+  border-left:1px solid  #999999;
+}
+
 /* media query section  */
 
 
