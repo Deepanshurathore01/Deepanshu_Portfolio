@@ -34,6 +34,13 @@ margin: auto;
   
 }
 
+.one{
+  width: 70%;
+  /* background-color: #EF5F22; */
+  display: flex;
+  justify-content: space-between;
+}
+
 #nav-part2{
   display: flex;
   /* background-color: blue; */
@@ -386,7 +393,7 @@ padding: 3vw 3vw;
 }
 
 /* -------------- contact button sectionn  */
-#contact .btn{
+#open .btn{
   text-align: center;
   padding:10px; 
   margin:auto;
@@ -399,86 +406,68 @@ padding: 3vw 3vw;
   border-left:1px solid  #999999;
 }
 
-.model-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  width: 100vw;
+
+.overlay{
+  width: 100%;
+  height: 100vh;
   position: fixed;
-  top:0;
-  left:0;
-  background:rgba(22, 22, 22, 0.3);
-  transform: scale(0);
-
-}
-.model-container .model{
-  height: 490px;
-  width: 370px;
-/* margin: 0 10px; */
-/* padding: 20px; */
-background: #fff;
-border-radius: 5px;
-/* text-align: center; */
-position: relative;
+  top:0%;
+  z-index: -1;
+  opacity: 0;
+  background-color:rgba(0, 0, 0, .5);
+  transition: 1s;
 }
 
-.model-container .model .ri-heart-fill{
-  font-size: 100px;
-  padding-bottom: 50px;
-  color: crimson;
-  margin: 10px 0px;
-  text-shadow: 0 3px 5px rgba(43, 42, 42, 0.3),
-  30px 30px 0 #ccc,
-  -30px 30px 0 #333 ;
-}
-.model-container .model h3{
-  color: #333;
-  font-size: 25px;
-  padding-top: 30px;
+.showoverlay{
+  opacity: 1;
+  z-index: 1;
 }
 
-.model-container .model p{
-  color: #666;
-  margin: 20px 0;
-}
-.model-container .model button{
-  height: 35px;
-  width: 120px;
-  background:#333 ;
-  color: #fff;
-  outline: none;
-  border-radius: 50px;
-  border: none;
-  font-size: 17px;
-  cursor: pointer;
-  box-shadow: 0 5px 15px rgba(0,0,0,.3);
-}
-
-.model-container .model button:hover{
-  opacity: .8;
-}
-
-.model-container .model .ri-close-line{
+.loginform{
+  /* width: 380px; */
+  height: fit-content;
+  /* padding: 1vw 1vw; */
+  transition: 2s;
+  /* background-color: #fdfdfd; */
   position: absolute;
-  top:15px;
-  right: 15px;
-  font-size: 25px;
-  font-weight: 900;
-  cursor: pointer;
-  color: #333;
+  left:50%;
+  top:-50%;
+  transform: translate(-50%,-50%);
+  
 }
+
+.showloginform{
+  top:50%;
+  z-index: 9;
+}
+
+.loginform .icon{
+  position: absolute;
+  z-index: 999;
+  font-size: 2vw;
+  font-weight: bold;
+  right: 2%;
+  width: 30px;
+  text-align: center;
+  margin: 5px;
+  background-color: #fff;
+  color: #291e80;
+  cursor: pointer;
+}
+
 
 .fr{
   display: flex;
   flex-direction: column;
-  height: 450px;
-  width: 320px;
-  background-color:rgb(28, 214, 177);
+  height: 70vh;
+  width: 25vw;
+  background: linear-gradient(200deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
   gap:10px;
-  padding: 2vw 2vw;
+  padding: 3vw 3vw;
   position: relative;
-  
+  border-radius: 20px;
+  margin: auto;
+  box-shadow: 0px 0px 10px 3px;
 }
 
 .fr label{
@@ -488,7 +477,7 @@ position: relative;
 }
 
 .fr input{
-  padding: 10px 20px ;
+  padding: 10px 30px ;
   border: 3px solid grey;
   border-radius: 1vw;
   width: 20vw;
@@ -496,7 +485,7 @@ position: relative;
 
 .fr textarea{
   margin-top: 20px;
-  width:95%;
+  width:100%;
   height:80px;
   border: 3px solid grey;
   border-radius: 1vw;
@@ -505,7 +494,7 @@ position: relative;
 .fr .btn{
   text-align: center;
   padding:12px; 
-  margin:auto;
+  margin: auto;
   width:30%;
   font-size: 20px;
   background-color:#fff;
@@ -515,6 +504,10 @@ position: relative;
   border-top:1px solid  #999999;
   border-left:1px solid  #999999;
 }
+
+
+
+
 
 /* media query section  */
 
@@ -530,6 +523,13 @@ position: relative;
     justify-content: space-between;
     padding: 2vw 4vw 0 3.5vw;
     
+  }
+  .one{
+    width: 70%;
+    /* background-color: #EF5F22; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
   }
   
   #nav-part2{
@@ -862,5 +862,39 @@ position: relative;
     font-weight: 800;
     padding: 2vw  3vw;
     
+  }
+
+  .fr{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 70vw;
+    background: linear-gradient(200deg, rgb(19, 173, 199) 0%, rgb(148, 93, 214) 100%);
+    gap:10px;
+    padding: 2vw 4vw;
+    position: relative;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 0px 0px 10px 3px;
+  }
+  .fr input{
+    margin-top: 10px;
+    padding: 1vw 8vw;
+    border: 3px solid grey;
+    border-radius: 1vw;
+    width: 60vw;
+  }
+  .loginform .icon{
+    position: absolute;
+    z-index: 999;
+    font-size: 3vw;
+    font-weight: bold;
+    right: 2%;
+    width: 25px;
+    text-align: center;
+    margin: 5px;
+    background-color: #fff;
+    color: #0f0f0f;
+    cursor: pointer;
   }
 }

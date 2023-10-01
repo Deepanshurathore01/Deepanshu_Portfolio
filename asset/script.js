@@ -1,11 +1,16 @@
-$(document).ready(function() {
+function showmodel(){
+  document.querySelector(".overlay").classList.add("showoverlay");
+  document.querySelector(".loginform").classList.add("showloginform");
+}
 
-  $("#open").click(function() {
-    $('.model-container').css('transform','scale(1)');
-  });
+function closemodel(){
+  document.querySelector(".overlay").classList.remove("showoverlay");
+  document.querySelector(".loginform").classList.remove("showloginform");
+}
 
-  $("#close").click(function() {
-    $('.model-container').css('transform','scale(0)');
-  });
+var btnlogin = document.querySelector(".btn");
+btnlogin.addEventListener("click", showmodel);
 
-});
+var c = document.querySelector(".icon");
+c.addEventListener("click", closemodel);
+
